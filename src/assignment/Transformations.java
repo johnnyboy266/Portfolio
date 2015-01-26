@@ -437,24 +437,5 @@ class Smooth extends ImageEffect {
 
 }	
 
-	
-class DummyEffect extends ImageEffect {
 
-    public DummyEffect() {
-        super();
-        params = new ArrayList<ImageEffectParam>();
-        params.add(new ImageEffectIntParam("ParamName",
-                                           "Description of param.",
-                                           10, 0, 1000));
-    }
 
-    public int[][] apply(int[][] pixels,
-                         ArrayList<ImageEffectParam> params) {
-        // Use params here.
-        return pixels;
-    }
-
-    public String getDescription() {
-        return "Dummy";
-    }
-}
